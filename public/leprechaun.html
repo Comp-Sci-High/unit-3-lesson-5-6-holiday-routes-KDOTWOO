@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Leprechaun & Pot of Gold</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="leprechaun.css">
+</head>
+<body>
+  <div class="page">
+    <header class="top">
+      <h1>St. Patricks D<svg class="clover-a" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><g fill="#2aa34a"><circle cx="6" cy="6" r="3"/><circle cx="14" cy="6" r="3"/><circle cx="6" cy="14" r="3"/><circle cx="14" cy="14" r="3"/><circle cx="10" cy="10" r="2" fill="#1b6b33"/></g></svg>y</h1>
+      <p class="hint">Watch the leprechaun ride the rainbow to the pot of gold. Click the link to switch to falling coins.</p>
+    </header>
+
+    <main class="main">
+      <section class="center">
+        <div class="center-animation">
+          <!-- 4-leaf clover on left -->
+          <div class="clover-left">
+            <svg class="clover-img" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <g fill="#2aa34a">
+                <ellipse cx="25" cy="25" rx="20" ry="30"/>
+                <ellipse cx="75" cy="25" rx="20" ry="30"/>
+                <ellipse cx="25" cy="75" rx="20" ry="30"/>
+                <ellipse cx="75" cy="75" rx="20" ry="30"/>
+                <circle cx="50" cy="50" r="15" fill="#1b6b33"/>
+              </g>
+            </svg>
+            <div class="fact-display" id="fact-display"></div>
+          </div>
+          <!-- Leprechaun on right -->
+          <svg id="leprechaun" class="leprechaun-hover" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="leprechaun">
+            <defs>
+              <linearGradient id="hatGrad" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0" stop-color="#2ea44f"/>
+                <stop offset="1" stop-color="#0b7a3a"/>
+              </linearGradient>
+            </defs>
+            <rect width="100%" height="100%" fill="none"/>
+            <!-- Hat -->
+            <path d="M50 50 C60 20,140 20,150 50 L140 55 C130 35,70 35,60 55 Z" fill="url(#hatGrad)"/>
+            <rect x="70" y="30" width="60" height="14" fill="#0a5f2b"/>
+            <!-- Face -->
+            <circle cx="100" cy="80" r="30" fill="#ffd9b3"/>
+            <circle cx="90" cy="75" r="3" fill="#000"/>
+            <circle cx="110" cy="75" r="3" fill="#000"/>
+            <path d="M95 90 Q100 95 105 90" stroke="#b45a2b" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <!-- Body -->
+            <rect x="75" y="110" width="50" height="80" fill="#0b7a3a"/>
+            <!-- Belt -->
+            <rect x="70" y="150" width="60" height="8" fill="#000"/>
+            <rect x="75" y="150" width="8" height="8" fill="#f6d85a"/>
+            <rect x="90" y="150" width="8" height="8" fill="#f6d85a"/>
+            <rect x="105" y="150" width="8" height="8" fill="#f6d85a"/>
+            <rect x="120" y="150" width="8" height="8" fill="#f6d85a"/>
+            <!-- Legs -->
+            <rect x="85" y="190" width="10" height="40" fill="#0b7a3a"/>
+            <rect x="105" y="190" width="10" height="40" fill="#0b7a3a"/>
+            <!-- Shoes -->
+            <ellipse cx="90" cy="235" rx="12" ry="8" fill="#3b2f2f"/>
+            <ellipse cx="110" cy="235" rx="12" ry="8" fill="#3b2f2f"/>
+            <!-- Arms -->
+            <rect x="65" y="120" width="10" height="30" fill="#ffd9b3"/>
+            <rect x="125" y="120" width="10" height="30" fill="#ffd9b3"/>
+          </svg>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">Have a lucky day!</footer>
+  </div>
+
+  <script src="leprechaun.js"></script>
+</body>
+</html>

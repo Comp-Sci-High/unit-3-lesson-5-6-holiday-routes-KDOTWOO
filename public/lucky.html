@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Lucky Clovers</title>
+  <link rel="stylesheet" href="lucky.css">
+</head>
+<body>
+  <div class="title">LUCKY CLOVERS</div>
+  <svg class="leprechaun" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="leprechaun">
+    <defs>
+      <linearGradient id="hatGrad" x1="0" x2="0" y1="0" y2="1">
+        <stop offset="0" stop-color="#2ea44f"/>
+        <stop offset="1" stop-color="#0b7a3a"/>
+      </linearGradient>
+    </defs>
+    <rect width="100%" height="100%" fill="none"/>
+    <!-- Hat -->
+    <path d="M50 50 C60 20,140 20,150 50 L140 55 C130 35,70 35,60 55 Z" fill="url(#hatGrad)"/>
+    <rect x="70" y="30" width="60" height="14" fill="#0a5f2b"/>
+    <!-- Face -->
+    <circle cx="100" cy="80" r="30" fill="#ffd9b3"/>
+    <circle cx="90" cy="75" r="3" fill="#000"/>
+    <circle cx="110" cy="75" r="3" fill="#000"/>
+    <path d="M95 90 Q100 95 105 90" stroke="#b45a2b" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- Body -->
+    <rect x="75" y="110" width="50" height="80" fill="#0b7a3a"/>
+    <!-- Belt -->
+    <rect x="70" y="150" width="60" height="8" fill="#000"/>
+    <rect x="75" y="150" width="8" height="8" fill="#f6d85a"/>
+    <rect x="90" y="150" width="8" height="8" fill="#f6d85a"/>
+    <rect x="105" y="150" width="8" height="8" fill="#f6d85a"/>
+    <rect x="120" y="150" width="8" height="8" fill="#f6d85a"/>
+    <!-- Legs -->
+    <rect x="85" y="190" width="10" height="40" fill="#0b7a3a"/>
+    <rect x="105" y="190" width="10" height="40" fill="#0b7a3a"/>
+    <!-- Shoes -->
+    <ellipse cx="90" cy="235" rx="12" ry="8" fill="#3b2f2f"/>
+    <ellipse cx="110" cy="235" rx="12" ry="8" fill="#3b2f2f"/>
+    <!-- Arms out -->
+    <rect x="45" y="120" width="30" height="10" fill="#ffd9b3"/>
+    <rect x="125" y="120" width="30" height="10" fill="#ffd9b3"/>
+  </svg>
+  <div class="options">
+    <button class="option" id="main-menu">Main Menu</button>
+    <button class="option" id="previous-page">Previous Page</button>
+  </div>
+  <script src="lucky.js"></script>
+</body>
+</html>

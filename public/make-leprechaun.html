@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Make a Leprechaun</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="make-leprechaun.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Make a Leprechaun</h1>
+      <p>Customize your own leprechaun!</p>
+    </header>
+
+    <main>
+      <div class="customizer">
+        <div class="options">
+          <div class="option">
+            <label>Hat:</label>
+            <button id="prevHat">&larr;</button>
+            <span id="hatLabel">Green Hat</span>
+            <button id="nextHat">&rarr;</button>
+          </div>
+          <div class="option">
+            <label>Body Tone:</label>
+            <select id="bodyTone">
+              <option value="#ffd9b3">White</option>
+              <option value="#d2b48c">Brown</option>
+              <option value="#8b4513">Black</option>
+            </select>
+          </div>
+          <div class="option">
+            <label>Eye Color:</label>
+            <select id="eyeColor">
+              <option value="#0000ff">Blue</option>
+              <option value="#ff0000">Red</option>
+              <option value="#ffffff">White</option>
+              <option value="#000000">Black</option>
+              <option value="#8b4513">Brown</option>
+            </select>
+          </div>
+          <div class="option">
+            <label>Clothes:</label>
+            <select id="clothes">
+              <option value="#0b7a3a">Green Shirt</option>
+              <option value="#ff0000">Red Shirt</option>
+              <option value="#0000ff">Blue Shirt</option>
+              <option value="#ffff00">Yellow Shirt</option>
+            </select>
+          </div>
+          <div class="option">
+            <label>Pants:</label>
+            <select id="pants">
+              <option value="#000000">Black Pants</option>
+              <option value="#8b4513">Brown Pants</option>
+              <option value="#0000ff">Blue Pants</option>
+              <option value="#ff0000">Red Pants</option>
+            </select>
+          </div>
+          <div class="option">
+            <label>Shoes:</label>
+            <select id="shoes">
+              <option value="#3b2f2f">Brown Shoes</option>
+              <option value="#000000">Black Shoes</option>
+              <option value="#ff0000">Red Shoes</option>
+              <option value="#ffff00">Yellow Shoes</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="display">
+          <svg id="leprechaunSvg" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="hatGrad" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0" stop-color="#2ea44f"/>
+                <stop offset="1" stop-color="#0b7a3a"/>
+              </linearGradient>
+            </defs>
+            <rect width="100%" height="100%" fill="none"/>
+            <!-- Hat -->
+            <path id="hat" d="M50 50 C60 20,140 20,150 50 L140 55 C130 35,70 35,60 55 Z" fill="url(#hatGrad)"/>
+            <rect id="hatBand" x="70" y="30" width="60" height="14" fill="#0a5f2b"/>
+            <!-- Face -->
+            <circle id="face" cx="100" cy="80" r="30" fill="#ffd9b3"/>
+            <circle id="leftEye" cx="90" cy="75" r="3" fill="#000"/>
+            <circle id="rightEye" cx="110" cy="75" r="3" fill="#000"/>
+            <path d="M95 90 Q100 95 105 90" stroke="#b45a2b" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <!-- Body -->
+            <rect id="body" x="75" y="110" width="50" height="80" fill="#0b7a3a"/>
+            <!-- Belt -->
+            <rect x="70" y="150" width="60" height="8" fill="#000"/>
+            <rect x="75" y="150" width="8" height="8" fill="#f6d85a"/>
+            <rect x="90" y="150" width="8" height="8" fill="#f6d85a"/>
+            <rect x="105" y="150" width="8" height="8" fill="#f6d85a"/>
+            <rect x="120" y="150" width="8" height="8" fill="#f6d85a"/>
+            <!-- Legs -->
+            <rect id="leftLeg" x="85" y="190" width="10" height="40" fill="#0b7a3a"/>
+            <rect id="rightLeg" x="105" y="190" width="10" height="40" fill="#0b7a3a"/>
+            <!-- Shoes -->
+            <ellipse id="leftShoe" cx="90" cy="235" rx="12" ry="8" fill="#3b2f2f"/>
+            <ellipse id="rightShoe" cx="110" cy="235" rx="12" ry="8" fill="#3b2f2f"/>
+            <!-- Arms -->
+            <rect x="65" y="120" width="10" height="30" fill="#ffd9b3"/>
+            <rect x="125" y="120" width="10" height="30" fill="#ffd9b3"/>
+          </svg>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Enjoy your custom leprechaun!</p>
+    </footer>
+  </div>
+
+  <script src="make-leprechaun.js"></script>
+</body>
+</html></content>
+<parameter name="filePath">/workspaces/unit-3-lesson-5-6-holiday-routes-KDOTWOO/public/make-leprechaun.html
